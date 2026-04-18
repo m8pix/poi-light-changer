@@ -245,6 +245,26 @@
           },
           "url": "https://m8pix.github.io/poi-light-changer/c2c3bf2a96f51f44.zip",
           "zipSHA256": "b7f93db688a504d87781c093fd4a3cde73ee2fc3f31782a37ca8cc2ec27292f7"
+        },
+        "0.1.12": {
+          "name": "io.github.m8pix.poi-light-changer",
+          "version": "0.1.12",
+          "unity": "2022.3",
+          "unityRelease": "22f1",
+          "displayName": "Poi Light Changer",
+          "description": "Poiyomi 9.3+ / PC / Modular Avatar + NDMF 前提の VRChat アバター向け非破壊マテリアル制御ギミック。",
+          "license": "Proprietary",
+          "author": {
+            "name": "m8pix",
+            "url": "https://github.com/m8pix"
+          },
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.7.0",
+            "nadena.dev.modular-avatar": "^1.14.0",
+            "nadena.dev.ndmf": "^1.9.0"
+          },
+          "url": "https://m8pix.github.io/poi-light-changer/6b4441a1887b4eda.zip",
+          "zipSHA256": "dc7c8212ced0531875705ced8b855c78c50ae1276ca93117f1596bc06942c3fe"
         }
       }
     }
