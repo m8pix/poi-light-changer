@@ -1,0 +1,47 @@
+---
+id: getting-started
+title: Getting Started
+slug: /getting-started
+---
+
+# Getting Started
+
+## 1. コンポーネントを配置する
+
+`Poi Light Changer.prefab` をアバター配下へ置くか、任意の GameObject に `PoiLightChangerComponent` を追加します。
+
+## 2. 対象マテリアルを確認する
+
+PoiLC は avatar 配下の renderer と関連 material を走査し、Poiyomi material のみを処理対象にします。
+
+- non-Poiyomi material は無視されます
+- 対応外の Poiyomi material は diagnostic に出ます
+- 除外したい object は Exclusion Settings から外せます
+
+## 3. 必要なセクションだけ有効にする
+
+初期状態で有効な項目と無効な項目があります。  
+実際に使うセクションだけを有効にして、各 control の `Animation` `Sync` `Save` を必要に応じて調整します。
+
+## 4. build する
+
+build 時に PoiLC が以下を生成します。
+
+- parameter layout
+- ExMenu item
+- FX AnimatorController
+- AnimationClip / BlendTree
+- material clone
+
+build 完了後は、作業用に使った component 付き GameObject は cleanup で削除されます。
+
+## 5. 動作を確認する
+
+VRChat 上で ExMenu を開き、想定した項目が生成されているかを確認します。
+
+## よくある前提
+
+- `Texture Bake` は Color Bake shader が必要です
+- `SSAO` は Poiyomi Pro 前提です
+- `Contact Shadow` は Poiyomi Pro v10+ 前提です
+- ライセンス未認証時は利用できる機能が制限されます
