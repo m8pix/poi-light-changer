@@ -1,0 +1,152 @@
+{
+  "name": "Poi Light Changer Repo",
+  "author": "m8pix",
+  "url": "https://m8pix.github.io/poi-light-changer/index.json",
+  "id": "io.github.m8pix.poi-light-changer.vpm",
+  "packages": {
+    "io.github.m8pix.poi-light-changer": {
+      "versions": {
+        "0.1.0": {
+          "name": "io.github.m8pix.poi-light-changer",
+          "displayName": "Poi Light Changer",
+          "version": "0.1.0",
+          "url": "https://m8pix.github.io/poi-light-changer/ed09d6fadd6d0a11.zip",
+          "description": "Poiyomi 9.3+ / PC / Modular Avatar + NDMF 前提の VRChat アバター向け非破壊マテリアル制御ギミック。",
+          "unity": "2022.3",
+          "unityRelease": "22f1",
+          "license": "Proprietary",
+          "author": {
+            "name": "m8pix",
+            "url": "https://github.com/m8pix"
+          },
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.7.0",
+            "nadena.dev.modular-avatar": "^1.14.0",
+            "nadena.dev.ndmf": "^1.9.0"
+          },
+          "zipSHA256": "0ef8b0a8c3a145f66b3be0027784e66d3159ab05cd5801cd5396acdfcab07151"
+        },
+        "0.1.1": {
+          "name": "io.github.m8pix.poi-light-changer",
+          "version": "0.1.1",
+          "unity": "2022.3",
+          "unityRelease": "22f1",
+          "displayName": "Poi Light Changer",
+          "description": "Poiyomi 9.3+ / PC / Modular Avatar + NDMF 前提の VRChat アバター向け非破壊マテリアル制御ギミック。",
+          "license": "Proprietary",
+          "author": {
+            "name": "m8pix",
+            "url": "https://github.com/m8pix"
+          },
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.7.0",
+            "nadena.dev.modular-avatar": "^1.14.0",
+            "nadena.dev.ndmf": "^1.9.0"
+          },
+          "url": "https://m8pix.github.io/poi-light-changer/2e862629e99c1a85.zip",
+          "zipSHA256": "ab37243fc462089a60dfaa89dda3c946f91bfdbbf4f3824edf63b39749258334"
+        },
+        "0.1.2": {
+          "name": "io.github.m8pix.poi-light-changer",
+          "version": "0.1.2",
+          "unity": "2022.3",
+          "unityRelease": "22f1",
+          "displayName": "Poi Light Changer",
+          "description": "Poiyomi 9.3+ / PC / Modular Avatar + NDMF 前提の VRChat アバター向け非破壊マテリアル制御ギミック。",
+          "license": "Proprietary",
+          "author": {
+            "name": "m8pix",
+            "url": "https://github.com/m8pix"
+          },
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.7.0",
+            "nadena.dev.modular-avatar": "^1.14.0",
+            "nadena.dev.ndmf": "^1.9.0"
+          },
+          "url": "https://m8pix.github.io/poi-light-changer/6c85f5af75f0606d.zip",
+          "zipSHA256": "bfd1d5bbe3d117ef80f0b0e175367dead4637ea99bd1e2539e55a5c6f47bdcec"
+        },
+        "0.1.3": {
+          "name": "io.github.m8pix.poi-light-changer",
+          "version": "0.1.3",
+          "unity": "2022.3",
+          "unityRelease": "22f1",
+          "displayName": "Poi Light Changer",
+          "description": "Poiyomi 9.3+ / PC / Modular Avatar + NDMF 前提の VRChat アバター向け非破壊マテリアル制御ギミック。",
+          "license": "Proprietary",
+          "author": {
+            "name": "m8pix",
+            "url": "https://github.com/m8pix"
+          },
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.7.0",
+            "nadena.dev.modular-avatar": "^1.14.0",
+            "nadena.dev.ndmf": "^1.9.0"
+          },
+          "url": "https://m8pix.github.io/poi-light-changer/deb281dfbf22b5ef.zip",
+          "zipSHA256": "9f85d5b1008d662c692094121e825bcd1118c76ffc49895b5d2264c36b75573f"
+        },
+        "0.1.4": {
+          "name": "io.github.m8pix.poi-light-changer",
+          "version": "0.1.4",
+          "unity": "2022.3",
+          "unityRelease": "22f1",
+          "displayName": "Poi Light Changer",
+          "description": "Poiyomi 9.3+ / PC / Modular Avatar + NDMF 前提の VRChat アバター向け非破壊マテリアル制御ギミック。",
+          "license": "Proprietary",
+          "author": {
+            "name": "m8pix",
+            "url": "https://github.com/m8pix"
+          },
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.7.0",
+            "nadena.dev.modular-avatar": "^1.14.0",
+            "nadena.dev.ndmf": "^1.9.0"
+          },
+          "url": "https://m8pix.github.io/poi-light-changer/8c7909308a69f37a.zip",
+          "zipSHA256": "396782bd539ed81efdd823129470502f49abf721f751dfddb1a989e22a2295a2"
+        },
+        "0.1.5": {
+          "name": "io.github.m8pix.poi-light-changer",
+          "version": "0.1.5",
+          "unity": "2022.3",
+          "unityRelease": "22f1",
+          "displayName": "Poi Light Changer",
+          "description": "Poiyomi 9.3+ / PC / Modular Avatar + NDMF 前提の VRChat アバター向け非破壊マテリアル制御ギミック。",
+          "license": "Proprietary",
+          "author": {
+            "name": "m8pix",
+            "url": "https://github.com/m8pix"
+          },
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.7.0",
+            "nadena.dev.modular-avatar": "^1.14.0",
+            "nadena.dev.ndmf": "^1.9.0"
+          },
+          "url": "https://m8pix.github.io/poi-light-changer/6a9b306e88c1e12f.zip",
+          "zipSHA256": "dad6b87d35d1c7fa06d16ef8de3f7e665de4b1773b8fb3b4b44f9345e02faaa5"
+        },
+        "0.1.6": {
+          "name": "io.github.m8pix.poi-light-changer",
+          "version": "0.1.6",
+          "unity": "2022.3",
+          "unityRelease": "22f1",
+          "displayName": "Poi Light Changer",
+          "description": "Poiyomi 9.3+ / PC / Modular Avatar + NDMF 前提の VRChat アバター向け非破壊マテリアル制御ギミック。",
+          "license": "Proprietary",
+          "author": {
+            "name": "m8pix",
+            "url": "https://github.com/m8pix"
+          },
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.7.0",
+            "nadena.dev.modular-avatar": "^1.14.0",
+            "nadena.dev.ndmf": "^1.9.0"
+          },
+          "url": "https://m8pix.github.io/poi-light-changer/5f6185957dd41cb2.zip",
+          "zipSHA256": "f933b6c6c0d85663be0a85a9679f2106fb994a0e5256ceaf0b379075953964cb"
+        }
+      }
+    }
+  }
+}
