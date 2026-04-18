@@ -2,131 +2,143 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+
 const config: Config = {
-  title: 'PoiLC Docs',
-  tagline: 'Poi Light Changer documentation for VRChat avatars using Poiyomi Shader.',
-  favicon: 'img/logo.svg',
+  title: 'My Site',
+  tagline: 'Dinosaurs are cool',
+  favicon: 'img/favicon.ico',
+
+  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
-    v4: true,
+    v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
-  url: 'https://m8pix.github.io',
-  baseUrl: '/poi-light-changer/',
-  organizationName: 'm8pix',
-  projectName: 'poi-light-changer',
+
+  // Set the production url of your site here
+  url: 'https://your-docusaurus-site.example.com',
+  // Set the /<baseUrl>/ pathname under which your site is served
+  // For GitHub pages deployment, it is often '/<projectName>/'
+  baseUrl: '/',
+
+  // GitHub pages deployment config.
+  // If you aren't using GitHub pages, you don't need these.
+  organizationName: 'facebook', // Usually your GitHub org/user name.
+  projectName: 'docusaurus', // Usually your repo name.
+
   onBrokenLinks: 'throw',
-  onBrokenAnchors: 'warn',
-  trailingSlash: false,
+
+  // Even if you don't use internationalization, you can use this field to set
+  // useful metadata like html lang. For example, if your site is Chinese, you
+  // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'ja',
-    locales: ['ja'],
+    defaultLocale: 'en',
+    locales: ['en'],
   },
+
   presets: [
     [
       'classic',
       {
         docs: {
-          routeBasePath: '/',
           sidebarPath: './sidebars.ts',
-          editUrl: 'https://github.com/m8pix/poi-light-changer/tree/main/website/',
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: false,
+        blog: {
+          showReadingTime: true,
+          feedOptions: {
+            type: ['rss', 'atom'],
+            xslt: true,
+          },
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // Useful options to enforce blogging best practices
+          onInlineTags: 'warn',
+          onInlineAuthors: 'warn',
+          onUntruncatedBlogPosts: 'warn',
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
       } satisfies Preset.Options,
     ],
   ],
+
   themeConfig: {
-    metadata: [
-      {
-        name: 'keywords',
-        content:
-          'poilc, poi light changer, poiyomi, vrchat, docs, documentation, vpm, ndmf, modular avatar',
-      },
-    ],
+    // Replace with your project's social card
+    image: 'img/docusaurus-social-card.jpg',
     colorMode: {
-      defaultMode: 'light',
       respectPrefersColorScheme: true,
     },
-    docs: {
-      sidebar: {
-        hideable: true,
-        autoCollapseCategories: true,
-      },
-    },
-    tableOfContents: {
-      minHeadingLevel: 2,
-      maxHeadingLevel: 3,
-    },
     navbar: {
-      title: 'PoiLC Docs',
+      title: 'My Site',
       logo: {
-        alt: 'PoiLC Logo',
+        alt: 'My Site Logo',
         src: 'img/logo.svg',
       },
       items: [
         {
-          type: 'doc',
-          docId: 'intro',
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Docs',
+          label: 'Tutorial',
         },
-        {to: '/install', label: 'Install', position: 'left'},
+        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          to: '/reference/controls-overview',
-          label: 'Controls',
-          position: 'left',
-        },
-        {
-          href: 'https://m8pix.github.io/poi-light-changer/index.json',
-          label: 'VPM',
-          position: 'right',
-        },
-        {
-          href: 'https://github.com/m8pix/poi-light-changer',
+          href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
           position: 'right',
         },
       ],
     },
     footer: {
-      style: 'light',
+      style: 'dark',
       links: [
         {
           title: 'Docs',
           items: [
-            {label: 'Intro', to: '/intro'},
-            {label: 'Install', to: '/install'},
-            {label: 'Getting Started', to: '/getting-started'},
+            {
+              label: 'Tutorial',
+              to: '/docs/intro',
+            },
           ],
         },
         {
-          title: 'Repository',
+          title: 'Community',
           items: [
             {
-              label: 'VPM index.json',
-              href: 'https://m8pix.github.io/poi-light-changer/index.json',
+              label: 'Stack Overflow',
+              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
             },
             {
-              label: 'policy.json',
-              href: 'https://m8pix.github.io/poi-light-changer/policy.json',
+              label: 'Discord',
+              href: 'https://discordapp.com/invite/docusaurus',
+            },
+            {
+              label: 'X',
+              href: 'https://x.com/docusaurus',
+            },
+          ],
+        },
+        {
+          title: 'More',
+          items: [
+            {
+              label: 'Blog',
+              to: '/blog',
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/m8pix/poi-light-changer',
+              href: 'https://github.com/facebook/docusaurus',
             },
           ],
         },
-        {
-          title: 'Project',
-          items: [
-            {label: 'Controls Overview', to: '/reference/controls-overview'},
-            {label: 'License', to: '/reference/license'},
-            {label: 'GitHub Pages', to: '/reference/github-pages'},
-          ],
-        },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} m8pix. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

@@ -1,168 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@500;700;800&family=Noto+Sans+JP:wght@400;500;700;800&display=swap');
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
 
+/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #cc6e1e;
-  --ifm-color-primary-dark: #b86218;
-  --ifm-color-primary-darker: #ab5c17;
-  --ifm-color-primary-darkest: #8d4b15;
-  --ifm-color-primary-light: #d67c2f;
-  --ifm-color-primary-lighter: #dc8740;
-  --ifm-color-primary-lightest: #e4a169;
-  --ifm-background-color: #f5efe5;
-  --ifm-background-surface-color: #fffaf1;
-  --ifm-navbar-background-color: rgba(255, 250, 241, 0.9);
-  --ifm-footer-background-color: #efe3d3;
-  --ifm-font-family-base: 'Noto Sans JP', sans-serif;
-  --ifm-heading-font-family: 'Lexend', 'Noto Sans JP', sans-serif;
-  --ifm-heading-font-weight: 800;
-  --ifm-h1-font-size: clamp(2.4rem, 4vw, 3.4rem);
-  --ifm-h2-font-size: clamp(1.8rem, 3vw, 2.4rem);
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
-  --ifm-border-color: #dcc6aa;
-  --ifm-card-border-radius: 18px;
-  --ifm-global-shadow-lw: 0 16px 36px rgba(64, 44, 20, 0.08);
-  --docusaurus-highlighted-code-line-bg: rgba(83, 48, 12, 0.08);
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-html {
-  background:
-    radial-gradient(circle at top left, rgba(204, 110, 30, 0.16), transparent 28%),
-    linear-gradient(180deg, #fbf6ee 0%, #f5efe5 100%);
-}
-
-body {
-  background: transparent;
-}
-
-.navbar {
-  backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(220, 198, 170, 0.7);
-}
-
-.navbar__title {
-  letter-spacing: 0.02em;
-}
-
-.theme-doc-markdown {
-  font-size: 1rem;
-}
-
-.theme-doc-markdown h1,
-.theme-doc-markdown h2,
-.theme-doc-markdown h3 {
-  letter-spacing: -0.02em;
-}
-
-.theme-doc-markdown h1:first-child {
-  margin-bottom: 1rem;
-}
-
-.theme-doc-markdown p,
-.theme-doc-markdown li {
-  line-height: 1.9;
-}
-
-.theme-doc-sidebar-container {
-  border-right-color: rgba(220, 198, 170, 0.8);
-}
-
-.menu__link--active {
-  background: rgba(204, 110, 30, 0.12);
-}
-
-.pagination-nav__link {
-  border-radius: 18px;
-  border-color: rgba(220, 198, 170, 0.9);
-  box-shadow: var(--ifm-global-shadow-lw);
-}
-
-.footer {
-  border-top: 1px solid rgba(220, 198, 170, 0.8);
-}
-
-.plc-hero {
-  padding: 2rem 0 1rem;
-}
-
-.plc-hero__eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.35rem 0.8rem;
-  border-radius: 999px;
-  background: rgba(204, 110, 30, 0.12);
-  color: #8d4b15;
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.plc-lead {
-  font-size: 1.06rem;
-  color: #5e5245;
-  max-width: 56rem;
-}
-
-.plc-grid {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  margin: 1.5rem 0 2rem;
-}
-
-.plc-card {
-  background: rgba(255, 255, 255, 0.84);
-  border: 1px solid rgba(220, 198, 170, 0.9);
-  border-radius: 18px;
-  padding: 1.1rem 1rem;
-  box-shadow: var(--ifm-global-shadow-lw);
-}
-
-.plc-card h3 {
-  margin-top: 0;
-  margin-bottom: 0.45rem;
-}
-
-.plc-callout {
-  padding: 1rem 1.1rem;
-  margin: 1.5rem 0;
-  border-left: 4px solid var(--ifm-color-primary);
-  background: rgba(204, 110, 30, 0.08);
-  border-radius: 0 18px 18px 0;
-}
-
+/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #ffb56b;
-  --ifm-color-primary-dark: #ffab57;
-  --ifm-color-primary-darker: #ffa348;
-  --ifm-color-primary-darkest: #ff911f;
-  --ifm-color-primary-light: #ffbf7f;
-  --ifm-color-primary-lighter: #ffc68e;
-  --ifm-color-primary-lightest: #ffd8b8;
-  --ifm-background-color: #1f1914;
-  --ifm-background-surface-color: #2a221c;
-  --ifm-navbar-background-color: rgba(31, 25, 20, 0.9);
-  --ifm-footer-background-color: #16110d;
-  --ifm-border-color: #4d3d2e;
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-}
-
-[data-theme='dark'] html {
-  background:
-    radial-gradient(circle at top left, rgba(255, 181, 107, 0.12), transparent 28%),
-    linear-gradient(180deg, #241d17 0%, #1b1510 100%);
-}
-
-[data-theme='dark'] .menu__link--active {
-  background: rgba(255, 181, 107, 0.14);
-}
-
-[data-theme='dark'] .plc-card {
-  background: rgba(42, 34, 28, 0.9);
-  border-color: rgba(77, 61, 46, 0.9);
-}
-
-[data-theme='dark'] .plc-callout {
-  background: rgba(255, 181, 107, 0.1);
 }

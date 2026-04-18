@@ -1,34 +1,47 @@
 ---
-id: intro
-title: Intro
-slug: /intro
+sidebar_position: 1
 ---
 
-# Intro
+# Tutorial Intro
 
-Poi Light Changer は、Poiyomi Shader を使っている VRChat アバターに対して、
-ゲーム内の ExMenu からマテリアル系パラメーターを操作できるようにするギミックです。
+Let's discover **Docusaurus in less than 5 minutes**.
 
-build 時に必要な menu / animator / parameter / material clone を生成するため、
-アバター本体へ手作業でアニメーターやメニューを組み込む前提ではありません。
+## Getting Started
 
-## できること
+Get started by **creating a new site**.
 
-- Lighting の明るさや倍率の制御
-- Light Direction の向き切り替えと XY 調整
-- Color 系の色味補正
-- Proximity の色変化制御
-- Backlight の色と強度まわりの制御
-- Outline / SSAO / Contact Shadow の条件付き制御
+Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
 
-## 目指している方向
+### What you'll need
 
-- Poiyomi / ThryEditor に近い Inspector 体験
-- build 時のみ動く非破壊ギミック
-- 配布可能な安定性
+- [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
+  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
 
-## 注意点
+## Generate a new site
 
-- Poiyomi 9.3 未満は動作保証外です。
-- Poiyomi の variant や version によって利用できる項目が変わります。
-- 一部機能はライセンス認証が必要です。詳細は [License](/reference/license) を参照してください。
+Generate a new Docusaurus site using the **classic template**.
+
+The classic template will automatically be added to your project after you run the command:
+
+```bash
+npm init docusaurus@latest my-website classic
+```
+
+You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+
+The command also installs all necessary dependencies you need to run Docusaurus.
+
+## Start your site
+
+Run the development server:
+
+```bash
+cd my-website
+npm run start
+```
+
+The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+
+The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+
+Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.

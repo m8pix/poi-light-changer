@@ -1,26 +1,41 @@
-# PoiLC Docs Website
+# Website
 
-この `website/` は Docusaurus の `classic` テンプレートをベースにした、PoiLC の GitHub Pages 用 docs ソースです。
+This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-## 使い方
-
-依存関係を入れる:
+## Installation
 
 ```bash
-npm install
+yarn
 ```
 
-ローカル開発:
+## Local Development
 
 ```bash
-npm start
+yarn start
 ```
 
-GitHub Pages 配信用の build を作る:
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+
+## Build
 
 ```bash
-npm run build:pages
+yarn build
 ```
 
-`build:pages` は Docusaurus の静的出力に加えて、repo root の `index.json` `policy.json` `*.zip` を `build/` へコピーします。  
-これにより、docs と VPM 配布物を同じ GitHub Pages URL で公開できます。
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+## Deployment
+
+Using SSH:
+
+```bash
+USE_SSH=true yarn deploy
+```
+
+Not using SSH:
+
+```bash
+GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
