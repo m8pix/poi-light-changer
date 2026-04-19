@@ -4,6 +4,13 @@
  * work well for content-centric websites.
  */
 
+.svg-inline--fa {
+  display: inline-block;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #e8548d;
