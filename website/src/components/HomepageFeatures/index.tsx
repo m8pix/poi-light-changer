@@ -11,32 +11,32 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'MA対応で簡単導入',
+    Svg: require('@site/static/img/undraw_puzzle-solved_qdjq.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        ModularAvatarに対応！<br />
+        <strong>Prefabを置くだけ</strong>で導入が可能です。
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'NDMF準拠の非破壊',
+    Svg: require('@site/static/img/undraw_split-testing_lkzx.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        ビルド時にのみ処理を行う非破壊設計！<br />
+        <strong>元のアバターに変更を加えない</strong>為<br />安全にご使用いただけます。
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Poiyomi 9.3〜10.xに対応',
+    Svg: require('@site/static/img/poi.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        <strong>Poiyomi Toon | Pro</strong>をサポート！<br />
+        新しい機能にも適時対応いたします。
       </>
     ),
   },
